@@ -1,0 +1,780 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 540,
+      "max": [
+        1.2656400203704834,
+        0.9229999780654907,
+        3.052639961242676
+      ],
+      "min": [
+        -0.3441399931907654,
+        -0.4831799864768982,
+        -5.427090167999268
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 6480,
+      "componentType": 5126,
+      "count": 540,
+      "max": [
+        0.9997976422309875,
+        0.9965147376060486,
+        0.9888941049575806
+      ],
+      "min": [
+        -0.999871551990509,
+        -0.9977248311042786,
+        -0.9752282500267029
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 3216,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12960,
+      "componentType": 5126,
+      "count": 1284,
+      "max": [
+        2.2575700283050537,
+        1.0629099607467651,
+        0.01295000035315752
+      ],
+      "min": [
+        -5.795149803161621,
+        -1.7421900033950806,
+        -2.1166698932647705
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 28368,
+      "componentType": 5126,
+      "count": 1284,
+      "max": [
+        0.9679421186447144,
+        0.9119197726249695,
+        0.9999997019767761
+      ],
+      "min": [
+        -0.9840734004974365,
+        -0.8162684440612793,
+        -0.9999997019767761
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12864,
+      "componentType": 5125,
+      "count": 7368,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 43776,
+      "componentType": 5126,
+      "count": 4506,
+      "max": [
+        1.0490399599075317,
+        1.0848900079727173,
+        1.8526599407196045
+      ],
+      "min": [
+        -1.0490399599075317,
+        -1.9491000175476074,
+        -2.011770009994507
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 97848,
+      "componentType": 5126,
+      "count": 4506,
+      "max": [
+        0.9998531937599182,
+        0.9990977644920349,
+        0.9999834895133972
+      ],
+      "min": [
+        -0.9998531937599182,
+        -0.9996703863143921,
+        -0.9999999403953552
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 42336,
+      "componentType": 5125,
+      "count": 26496,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 151920,
+      "componentType": 5126,
+      "count": 3181,
+      "max": [
+        1.3285800218582153,
+        1.9024699926376343,
+        2.465329885482788
+      ],
+      "min": [
+        -1.3285800218582153,
+        -1.8557000160217285,
+        -1.5767699480056763
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 190092,
+      "componentType": 5126,
+      "count": 3181,
+      "max": [
+        0.9998676180839539,
+        0.9958924651145935,
+        0.9998775124549866
+      ],
+      "min": [
+        -0.9998676180839539,
+        -0.9991459250450134,
+        -0.9989108443260193
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 148320,
+      "componentType": 5125,
+      "count": 18804,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 228264,
+      "componentType": 5126,
+      "count": 3058,
+      "max": [
+        0.7709500193595886,
+        0.06609000265598297,
+        3.275059938430786
+      ],
+      "min": [
+        -0.7709500193595886,
+        -2.059309959411621,
+        0.6103500127792358
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 264960,
+      "componentType": 5126,
+      "count": 3058,
+      "max": [
+        0.9999988675117493,
+        0.9996901750564575,
+        0.9999950528144836
+      ],
+      "min": [
+        -0.9999988675117493,
+        -0.9999603629112244,
+        -0.9925211071968079
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 223536,
+      "componentType": 5125,
+      "count": 18000,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 301656,
+      "componentType": 5126,
+      "count": 8784,
+      "max": [
+        1.3539199829101563,
+        3.147469997406006,
+        2.888010025024414
+      ],
+      "min": [
+        -1.3674099445343018,
+        0.7719500064849854,
+        0.0060800001956522465
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 407064,
+      "componentType": 5126,
+      "count": 8784,
+      "max": [
+        0.9998900294303894,
+        0.9995477199554443,
+        0.9933077692985535
+      ],
+      "min": [
+        -0.9998897910118103,
+        -0.9998284578323364,
+        -0.9942308068275452
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 295536,
+      "componentType": 5125,
+      "count": 52464,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 512472,
+      "componentType": 5126,
+      "count": 8964,
+      "max": [
+        1.0983999967575073,
+        3.3595499992370605,
+        3.2020299434661865
+      ],
+      "min": [
+        -1.12663996219635,
+        0.8523899912834167,
+        -0.033969998359680176
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 620040,
+      "componentType": 5126,
+      "count": 8964,
+      "max": [
+        0.9999406933784485,
+        0.9999938607215881,
+        0.9995350241661072
+      ],
+      "min": [
+        -0.9999403357505798,
+        -0.9999729990959167,
+        -0.9982454776763916
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 505392,
+      "componentType": 5125,
+      "count": 53532,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 727608,
+      "componentType": 5126,
+      "count": 386,
+      "max": [
+        0.6950500011444092,
+        -0.9018700122833252,
+        -0.49713000655174255
+      ],
+      "min": [
+        -0.6950500011444092,
+        -1.1927200555801392,
+        -0.8588600158691406
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 732240,
+      "componentType": 5126,
+      "count": 386,
+      "max": [
+        0.9976603984832764,
+        0.9824193716049194,
+        0.9691404700279236
+      ],
+      "min": [
+        -0.9976603984832764,
+        -0.9824849963188171,
+        -0.9686338305473328
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 719520,
+      "componentType": 5125,
+      "count": 2208,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 736872,
+      "componentType": 5126,
+      "count": 130,
+      "max": [
+        0.6700400114059448,
+        -1.0301100015640259,
+        -0.5347499847412109
+      ],
+      "min": [
+        -0.6700400114059448,
+        -1.1919399499893188,
+        -0.7879599928855896
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 738432,
+      "componentType": 5126,
+      "count": 130,
+      "max": [
+        0.8733470439910889,
+        -0.46136781573295593,
+        0.5505004525184631
+      ],
+      "min": [
+        -0.8733470439910889,
+        -0.9805949926376343,
+        -0.21558691561222076
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 728352,
+      "componentType": 5125,
+      "count": 672,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "TheCaitasaurus (https://sketchfab.com/thecaitasaurus)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/bonky-the-cucco-49a44042c7af4675bf47eb2e77fd47f0",
+      "title": "Bonky the Cucco"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 731040,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 739992,
+      "byteOffset": 731040,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1471032,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "feet_colour",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6113768219947815,
+          0.3327091336250305,
+          0.06917620450258255,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "body_colour",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "comb_material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.45979830622673035,
+          0.07651346921920776,
+          0.030936311930418015,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "tail_colour",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9113926887512207,
+          0.9095425605773926,
+          0.912986695766449,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "eye_colour",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.023650534451007843,
+          0.023650534451007843,
+          0.023650534451007843,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.002",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0034254814963787794,
+          0.023638062179088593,
+          0.03310251608490944,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cucco_wingspread_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": " Feathers_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_body_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_body_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_body_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_butt_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15
+          },
+          "indices": 17,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_butt_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 19,
+            "POSITION": 18
+          },
+          "indices": 20,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_eye_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 22,
+            "POSITION": 21
+          },
+          "indices": 23,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cucco_eye_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24
+          },
+          "indices": 26,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.8911532759666443,
+        0.06015390902757635,
+        0.4496968984603882,
+        0.0,
+        0.45370233058929443,
+        -0.11815313994884472,
+        -0.8832859396934509,
+        0.0,
+        0.0,
+        0.9911717176437378,
+        -0.1325845271348951,
+        0.0,
+        -0.36154448986053467,
+        0.09166998416185382,
+        -0.13030292093753812,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        6
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3,
+        4
+      ],
+      "matrix": [
+        -0.2015,
+        0.03672,
+        -0.9788,
+        0.0,
+        0.035800000000000005,
+        0.99891,
+        0.030100000000000005,
+        0.0,
+        0.77022,
+        -0.022800000000000004,
+        -0.15941000000000005,
+        0.0,
+        1.0241500000000001,
+        -0.46547000000000005,
+        0.31809000000000004,
+        1.0
+      ],
+      "name": "Cucco_wingspread"
+    },
+    {
+      "mesh": 0,
+      "name": "Cucco_wingspread_0"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.032060000000000005,
+        -0.022730000000000004,
+        1.26988,
+        0.0,
+        0.03359000000000001,
+        0.9992,
+        0.027510000000000007,
+        0.0,
+        -0.99892,
+        0.03287000000000001,
+        0.04169000000000001,
+        0.0,
+        -0.19868000000000002,
+        1.54571,
+        1.13778,
+        1.0
+      ],
+      "name": " Feathers"
+    },
+    {
+      "mesh": 1,
+      "name": " Feathers_0"
+    },
+    {
+      "children": [
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "name": "Cucco_body"
+    },
+    {
+      "mesh": 2,
+      "name": "Cucco_body_0"
+    },
+    {
+      "mesh": 3,
+      "name": "Cucco_body_1"
+    },
+    {
+      "mesh": 4,
+      "name": "Cucco_body_2"
+    },
+    {
+      "children": [
+        11,
+        12
+      ],
+      "name": "Cucco_butt"
+    },
+    {
+      "mesh": 5,
+      "name": "Cucco_butt_0"
+    },
+    {
+      "mesh": 6,
+      "name": "Cucco_butt_1"
+    },
+    {
+      "children": [
+        14,
+        15
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        2.36631,
+        1.0
+      ],
+      "name": "Cucco_eye"
+    },
+    {
+      "mesh": 7,
+      "name": "Cucco_eye_0"
+    },
+    {
+      "mesh": 8,
+      "name": "Cucco_eye_1"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
