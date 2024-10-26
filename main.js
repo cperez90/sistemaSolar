@@ -2,6 +2,7 @@ import "./style.css";
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
+import { RGBELoader } from "three/examples/jsm/Addons.js";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -132,6 +133,31 @@ modelLoader.load('Models/candle/scene.gltf',
     console.log(error + "error de carga");
   }
 );
+
+new RGBELoader().setDataType(THREE.UnsignedByteType).load('')
+
+const galaxyTexture = textureLoader.load('Textures/space.jpg',
+  function (texture) {
+    scene.background = texture;
+  }
+);
+
+/* let galaxy;
+modelLoader.load('Models/galaxy/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    galaxy = model;
+    galaxy.scale.set(3,3,3);
+    objects.push(galaxy);
+    scene.add(galaxy);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+) */
 
 const llumGlobal = new THREE.DirectionalLight( 0x999999, 5);
 llumGlobal.position.set(1, 1, 1);
