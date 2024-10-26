@@ -12,6 +12,8 @@ renderer.setSize(width,height);
 const textureLoader = new THREE.TextureLoader();
 const modelLoader = new GLTFLoader();
 
+const rotationSpeed = 0.001;
+
 document.querySelector('body').appendChild(renderer.domElement);
 
 const camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
@@ -19,7 +21,7 @@ const scene = new THREE.Scene();
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
-camera.position.set(0, 1, 60);
+camera.position.set(0, 1, 70);
 
 const objects = [];
 
@@ -27,28 +29,14 @@ const solarSys = new THREE.Object3D();
 scene.add(solarSys);
 objects.push(solarSys);
 
-const radius = 2;
-const widthSegments = 8;
-const heightSegments = 8;
-const sphereGeometry = new THREE.SphereGeometry(
-  radius,
-  widthSegments,
-  heightSegments
-);
-
-const sunMaterial = new THREE.MeshStandardMaterial({ emissive: 0xffff00});
-const sun = new THREE.Mesh(sphereGeometry,sunMaterial);
-
-sun.scale.set(5,5,5);
-
 let sunCat;
 modelLoader.load('Models/cat/scene.gltf',
   (gltf)=>{
     const model = gltf.scene;
     sunCat = model;
-    sunCat.scale.set(0.08,0.08,0.08);
-    scene.add(sunCat);
-    camera.lookAt(sun.position);
+    sunCat.scale.set(0.03,0.03,0.03);
+    camera.lookAt(sunCat.position);
+    solarSys.add(sunCat);
   },
   (xhr)=>{
     console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
@@ -57,7 +45,7 @@ modelLoader.load('Models/cat/scene.gltf',
     console.log(error + "error de carga");
   }
 );
-solarSys.add(sunCat);
+
 objects.push(sunCat);
 
 const earthOrbit = new THREE.Object3D();
@@ -65,16 +53,13 @@ earthOrbit.position.x = 10;
 solarSys.add(earthOrbit);
 objects.push(earthOrbit);
 
-const earthMaterial = new THREE.MeshStandardMaterial({ emissive: 0x112244})
-const earth = new THREE.Mesh(sphereGeometry,earthMaterial);
-
-let earthBul
+let earthBul;
 modelLoader.load('Models/bulbasour/scene.gltf',
   (gltf)=>{
     const model = gltf.scene;
     earthBul = model;
-    earthBul.scale.set(0.05,0.05,0.05);
-    scene.add(earthBul);
+    earthBul.scale.set(6,6,6);
+    earthOrbit.add(earthBul);
   },
   (xhr)=>{
     console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
@@ -84,13 +69,71 @@ modelLoader.load('Models/bulbasour/scene.gltf',
   }
 );
 
-earthOrbit.add(earthBul);
+const moonOrbit = new THREE.Object3D();
+moonOrbit.position.x = 3;
+earthOrbit.add(moonOrbit);
+objects.push(moonOrbit);
 
+let moonLink;
+modelLoader.load('Models/moon/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    moonLink = model;
+    moonLink.scale.set(0.0005,0.0005,0.0005);
+    moonOrbit.add(moonLink);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
 
+const cuccoOrbit = new THREE.Object3D();
+cuccoOrbit.position.z = 15;
+cuccoOrbit.position.x = 15;
+solarSys.add(cuccoOrbit);
+objects.push(cuccoOrbit);
+
+let planetCucco;
+modelLoader.load('Models/cucco/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    planetCucco = model;
+    planetCucco.scale.set(0.4,0.4,0.4);
+    cuccoOrbit.add(planetCucco);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
+
+const candleOrbit = new THREE.Object3D();
+candleOrbit.position.x = 2.8;
+cuccoOrbit.add(candleOrbit);
+objects.push(candleOrbit);
+
+let moonCandle;
+modelLoader.load('Models/candle/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    moonCandle = model;
+    moonCandle.scale.set(0.6,0.6,0.6);
+    candleOrbit.add(moonCandle);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
 
 const llumGlobal = new THREE.DirectionalLight( 0x999999, 5);
-//llumGlobal.rotateX(45);
-//llumGlobal.rotateY(60);
 llumGlobal.position.set(1, 1, 1);
 scene.add(llumGlobal);
 
@@ -103,12 +146,14 @@ function animate(){
   const deltaTime = currentTime - time;
   time = currentTime;
 
-  if (isModelLoaded) {
-  //sun.rotateX(0.001 * deltaTime);
-  sun.rotateY(0.001 * deltaTime);
-  //sun.rotateZ(0.01);
-  }
+  objects.forEach((obj) => {
+    if (obj != undefined) {
+      obj.rotation.y += rotationSpeed * deltaTime;
+    } 
+  });
 
   renderer.render(scene,camera);
+  requestAnimationFrame(animate);
 }
-renderer.setAnimationLoop(animate);
+
+animate();
