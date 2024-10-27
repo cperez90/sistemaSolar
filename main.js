@@ -80,7 +80,7 @@ modelLoader.load('Models/moon/scene.gltf',
   (gltf)=>{
     const model = gltf.scene;
     moonLink = model;
-    moonLink.scale.set(0.0005,0.0005,0.0005);
+    moonLink.scale.set(0.0003,0.0003,0.0003);
     moonOrbit.add(moonLink);
   },
   (xhr)=>{
@@ -92,8 +92,8 @@ modelLoader.load('Models/moon/scene.gltf',
 );
 
 const cuccoOrbit = new THREE.Object3D();
-cuccoOrbit.position.z = 15;
-cuccoOrbit.position.x = 15;
+cuccoOrbit.position.z = 11.5;
+cuccoOrbit.position.x = 11.5;
 solarSys.add(cuccoOrbit);
 objects.push(cuccoOrbit);
 
@@ -134,7 +134,93 @@ modelLoader.load('Models/candle/scene.gltf',
   }
 );
 
-new RGBELoader().setDataType(THREE.UnsignedByteType).load('')
+const bottleOrbit = new THREE.Object3D();
+bottleOrbit.position.z = 2.8;
+cuccoOrbit.add(bottleOrbit);
+objects.push(bottleOrbit);
+
+let moon2bottle;
+modelLoader.load('Models/bottle/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    moon2bottle = model;
+    moon2bottle.scale.set(2,2,2);
+    bottleOrbit.add(moon2bottle);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
+
+const houseOrbit = new THREE.Object3D();
+houseOrbit.position.z = 18;
+//houseOrbit.position.x = 18;
+solarSys.add(houseOrbit);
+objects.push(houseOrbit);
+
+let planetHouse;
+modelLoader.load('Models/house1/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    planetHouse = model;
+    planetHouse.scale.set(0.08,0.08,0.08);
+    houseOrbit.add(planetHouse);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
+
+const ripOrbit = new THREE.Object3D();
+ripOrbit.position.z = 3;
+houseOrbit.add(ripOrbit);
+objects.push(ripOrbit);
+
+let moonRip;
+modelLoader.load('Models/rip/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    moonRip = model;
+    moonRip.scale.set(1,1,1);
+    ripOrbit.add(moonRip);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
+
+const house2Orbit = new THREE.Object3D();
+house2Orbit.position.z = 25.5;
+house2Orbit.position.x = 25.5;
+solarSys.add(house2Orbit);
+objects.push(house2Orbit);
+
+let planet2House;
+modelLoader.load('Models/houseHappy/scene.gltf',
+  (gltf)=>{
+    const model = gltf.scene;
+    planet2House = model;
+    planet2House.scale.set(0.3,0.3,0.3);
+    house2Orbit.add(planet2House);
+  },
+  (xhr)=>{
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  },
+  (error)=>{
+    console.log(error + "error de carga");
+  }
+);
+
+new RGBELoader().setDataType(THREE.UnsignedByteType).load('');
 
 const galaxyTexture = textureLoader.load('Textures/space.jpg',
   function (texture) {
