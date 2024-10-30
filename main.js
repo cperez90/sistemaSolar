@@ -12,6 +12,7 @@ renderer.setSize(width,height);
 
 const textureLoader = new THREE.TextureLoader();
 const modelLoader = new GLTFLoader();
+const hdriLoader = new RGBELoader();
 
 const rotationSpeed = 0.001;
 
@@ -48,6 +49,11 @@ modelLoader.load('Models/cat/scene.gltf',
 );
 
 objects.push(sunCat);
+
+const color = 0xffffff;
+const intensity = 1000;
+const light = new THREE.PointLight(color, intensity);
+solarSys.add(light);
 
 const earthOrbit = new THREE.Object3D();
 earthOrbit.position.x = 10;
@@ -220,22 +226,20 @@ modelLoader.load('Models/houseHappy/scene.gltf',
   }
 );
 
-new RGBELoader().setDataType(THREE.UnsignedByteType).load('');
+/* new RGBELoader().setDataType(THREE.UnsignedByteType).load('');
 
 const galaxyTexture = textureLoader.load('Textures/space.jpg',
   function (texture) {
     scene.background = texture;
   }
-);
+); */
 
-/* let galaxy;
-modelLoader.load('Models/galaxy/scene.gltf',
-  (gltf)=>{
-    const model = gltf.scene;
-    galaxy = model;
-    galaxy.scale.set(3,3,3);
-    objects.push(galaxy);
-    scene.add(galaxy);
+let galaxy;
+hdriLoader.load('HDRi/HDR_silver_and_gold_nebulae.hdr',
+  (texture)=>{
+    texture.mapping = THREE.EquirectangularReflectionMapping;
+    scene.background = texture;
+    scene.environment = texture;
   },
   (xhr)=>{
     console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
@@ -243,7 +247,7 @@ modelLoader.load('Models/galaxy/scene.gltf',
   (error)=>{
     console.log(error + "error de carga");
   }
-) */
+);
 
 const llumGlobal = new THREE.DirectionalLight( 0x999999, 5);
 llumGlobal.position.set(1, 1, 1);
